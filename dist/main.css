@@ -1,0 +1,49 @@
+.standart-button__red {
+  width: 118px;
+  height: 31px;
+  color: #e75735;
+  background: white;
+  border: solid #e75735 1px;
+  border-radius: 3px;
+  box-shadow: 0px 3px #e75735; }
+  .standart-button__red:hover {
+    background-color: #e75735;
+    box-shadow: 0px 3px #bf3e1f;
+    color: white; }
+  .standart-button__red:active {
+    box-shadow: none;
+    transform: translateY(4px); }
+  .standart-button__red_small {
+    width: 78px;
+    height: 22px;
+    box-shadow: 0px 2px #e75735; }
+    .standart-button__red_small:hover {
+      box-shadow: 0px 2px #bf3e1f; }
+    .standart-button__red_small:active {
+      box-shadow: none;
+      transform: translateY(2px); }
+
+.standart-button__green {
+  width: 118px;
+  height: 31px;
+  color: #4eb7a8;
+  background: white;
+  border: solid #4eb7a8 1px;
+  border-radius: 3px;
+  box-shadow: 0px 3px #4eb7a8; }
+  .standart-button__green:hover {
+    background-color: #4eb7a8;
+    box-shadow: 0px 3px #28a190;
+    color: white; }
+  .standart-button__green:active {
+    box-shadow: none;
+    transform: translateY(4px); }
+  .standart-button__green_small {
+    width: 78px;
+    height: 22px;
+    box-shadow: 0px 2px #4eb7a8; }
+    .standart-button__green_small:hover {
+      box-shadow: 0px 2px #28a190; }
+    .standart-button__green_small:active {
+      box-shadow: none;
+      transform: translateY(2px); }
