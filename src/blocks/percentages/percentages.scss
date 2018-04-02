@@ -1,0 +1,29 @@
+$radius: 45px;
+$percent: 89;
+.percentages{
+    position: relative;
+    &:after{
+        content: ""+$percent;
+        top: 30%;
+        position: absolute;
+        display: block;
+        width: 100px;
+        text-align: center;
+        font-size: 35px;
+    }
+    &__progress{
+        width: 100px;
+        height: 100px;
+        transform: rotate(-90deg);
+    }
+    &__bar{
+        r:  $radius;
+        cx: 50px;
+        cy: 50px;
+        stroke-width: 5px;
+        fill: none;
+        stroke: #f77a52;
+        stroke-dasharray: 2*3.14*$radius;
+        stroke-dashoffset: (2*3.14*$radius)-(2*3.14*$radius/100*$percent);
+    }
+}

@@ -1,8 +1,8 @@
 $color-gray: #e5e5e5;
 $color-green: #4eb7a8;
-
+$line_size:  4px;
 .arrow-button{
-    font-size: 50px;
+    font-size: 9px;
     width: 50px;
     height: 50px;
     border-radius: 50% 50%;
@@ -11,14 +11,41 @@ $color-green: #4eb7a8;
     &:hover{
         background-color: $color-green;
     }
-    &_left{
-
-    }
-    &_right{
-        
-    }
     &:disabled{
-        border: none;
+        border: 3px solid $color-gray;
         background-color: $color-gray;
     }
+    &_left:after{
+        content: '';
+        display: block;
+        position: relative;
+        left: 11px;
+        width: 13px;
+        height: 13px;
+        border-top: $line_size solid $color-green;
+        border-right: $line_size solid $color-green;
+        -moz-transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+    &_right:after{
+        content: '';
+        display: block;
+        position: relative;
+        left: 5px;
+        width: 13px;
+        height: 13px;
+        border-top: $line_size solid $color-green;
+        border-right: $line_size solid $color-green;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    &_right:hover,&_left:hover,&:disabled{
+        &:after{
+        border-top: $line_size solid white;
+        border-right: $line_size solid white;
+        }
+    }
+
 }

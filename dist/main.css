@@ -56,7 +56,7 @@
         box-shadow: 0 0 #28a190; }
 
 .arrow-button {
-  font-size: 50px;
+  font-size: 9px;
   width: 50px;
   height: 50px;
   border-radius: 50% 50%;
@@ -65,5 +65,56 @@
   .arrow-button:hover {
     background-color: #4eb7a8; }
   .arrow-button:disabled {
-    border: none;
+    border: 3px solid #e5e5e5;
     background-color: #e5e5e5; }
+  .arrow-button_left:after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 11px;
+    width: 13px;
+    height: 13px;
+    border-top: 4px solid #4eb7a8;
+    border-right: 4px solid #4eb7a8;
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
+  .arrow-button_right:after {
+    content: '';
+    display: block;
+    position: relative;
+    left: 5px;
+    width: 13px;
+    height: 13px;
+    border-top: 4px solid #4eb7a8;
+    border-right: 4px solid #4eb7a8;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .arrow-button_right:hover:after, .arrow-button_left:hover:after, .arrow-button:disabled:after {
+    border-top: 4px solid white;
+    border-right: 4px solid white; }
+
+.percentages {
+  position: relative; }
+  .percentages:after {
+    content: "89";
+    top: 30%;
+    position: absolute;
+    display: block;
+    width: 100px;
+    text-align: center;
+    font-size: 35px; }
+  .percentages__progress {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg); }
+  .percentages__bar {
+    r: 45px;
+    cx: 50px;
+    cy: 50px;
+    stroke-width: 5px;
+    fill: none;
+    stroke: #f77a52;
+    stroke-dasharray: 282.6px;
+    stroke-dashoffset: 31.086px; }
